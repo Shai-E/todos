@@ -1,0 +1,36 @@
+###
+
+POST http://localhost:8080/api/todos
+Content-Type: application/json
+
+{
+    "title": "shai",
+    "task": "do something",
+    "date": "2021-08-18"
+}
+
+
+###
+
+PATCH http://localhost:8080/api/todos/set-completed-state/1
+Content-Type: application/json
+
+{
+    "isCompleted": 1
+}
+
+
+###
+PATCH http://localhost:8080/api/todos/2
+Content-Type: application/json
+
+{
+    "title": "shai3"
+}
+
+###
+DELETE http://localhost:8080/api/todos/2
+
+###
+
+GET  http://localhost:8080/api/todos
